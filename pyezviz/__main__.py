@@ -3,8 +3,9 @@ import sys
 import json
 import logging
 import pandas
-from .camera import EzvizCamera
-from .client import EzvizClient
+
+
+from pyezviz import EzvizClient, EzvizCamera
 
 
 def main():

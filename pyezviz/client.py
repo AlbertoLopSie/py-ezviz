@@ -6,6 +6,7 @@ import time
 from random import randint
 from uuid import uuid4
 from .camera import EzvizCamera
+# from pyezviz.camera import EzvizCamera
 
 COMMON_DEVICE_CATEGORY = "COMMON"
 CAMERA_DEVICE_CATEGORY = "IPC"

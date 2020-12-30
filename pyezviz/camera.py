@@ -1,5 +1,6 @@
 import time
-from .DeviceSwitchType import DeviceSwitchType
+import pyezviz.DeviceSwitchType
+from pyezviz.DeviceSwitchType import DeviceSwitchType
 
 class PyEzvizError(Exception):
     pass
