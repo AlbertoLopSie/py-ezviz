@@ -1,11 +1,11 @@
-# Ezviz PyPi
+# Py-Ezviz PyPi
 
 Pilot your Ezviz cameras with this module.
 
 ### Installing
 
 1) Clone git repository.
-2) pip install pyezviz
+2) pip install py-Ezviz
 ```
 
 ## Playing with it
@@ -60,7 +60,7 @@ tests/data folder contains samples of EzvizLife API for tests purposes.
 
 ## Side notes
 
-This module is based on BaQs/pyEzviz. Doesn't seem to be maintained any longer so I'm updating and improving on pyEzviz.
+This module is based on BaQs/pyEzviz. Doesn't seem to be maintained any longer so I'm updating and improving on py-Ezviz.
 
 
 ## Contributing
@@ -75,10 +75,10 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
-
+BaQs/pyEzviz for his initial work on this.
 
 ## Changelog
 
