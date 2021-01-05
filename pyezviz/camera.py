@@ -53,6 +53,7 @@ class EzvizCamera(object):
             'version': self._device['version'],
             'upgrade_available': self._device['upgradeAvailable'],
             'status': self._device['deviceExtStatus']['OnlineStatus'],
+            'device_category': self._device['deviceCategory']['link'],
             'device_sub_category': self._device['deviceCategory']['category'],
 
             'sleep': self.get_switch(DeviceSwitchType.SLEEP),

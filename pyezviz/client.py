@@ -11,6 +11,7 @@ COMMON_DEVICE_CATEGORY = "COMMON"
 CAMERA_DEVICE_CATEGORY = "IPC"
 BATTERY_CAMERA_DEVICE_CATEGORY = "BatteryCamera"
 DOORBELL_DEVICE_CATEGORY = "BDoorBell"
+BASE_STATION_DEVICE_CATEGORY = "XVR"
 
 API_BASE_TLD = ".ezvizlife.com"
 API_ENDPOINT_AUTH = "/doLogin"
@@ -245,7 +246,7 @@ class EzvizClient(object):
         # get all devices
         devices = self.get_DEVICE()
         cameras = []
-        supported_categories = [COMMON_DEVICE_CATEGORY, CAMERA_DEVICE_CATEGORY, BATTERY_CAMERA_DEVICE_CATEGORY, DOORBELL_DEVICE_CATEGORY]
+        supported_categories = [COMMON_DEVICE_CATEGORY, CAMERA_DEVICE_CATEGORY, BATTERY_CAMERA_DEVICE_CATEGORY, DOORBELL_DEVICE_CATEGORY, BASE_STATION_DEVICE_CATEGORY]
 
         # foreach, launch a switchstatus for the proper serial
         for idx, device in enumerate(devices):

@@ -81,7 +81,12 @@ def main():
             try:
                 client.login()
                 # print(json.dumps(client.load_cameras(), indent=2))
-                print(pandas.DataFrame(client.load_cameras()))
+                print(pandas.DataFrame(client.load_cameras())
+                    .to_string(columns=['serial', 'name', #version  upgrade_available 
+                                        'status', 'device_category', 'device_sub_category',  'sleep',  'privacy',  'audio', 'ir_led', 'state_led', # follow_move  alarm_notify  alarm_schedules_enabled alarm_sound_mod  encrypted       
+                                        'local_ip', 'local_rtsp_port', #'detection_sensibility', 
+                                        'battery_level', 'PIR_Status' # last_alarm_time last_alarm_pic
+                                        ]))
             except BaseException as exp:
                 print(exp)
                 return 1
