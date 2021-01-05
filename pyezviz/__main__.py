@@ -13,6 +13,7 @@ def main():
     parser = argparse.ArgumentParser(prog='pyezviz')
     parser.add_argument('-u', '--username', required=True, help='Ezviz username')
     parser.add_argument('-p', '--password', required=True, help='Ezviz Password')
+    parser.add_argument('-r', '--region', required=False, default='eu', help='Ezviz API region')
     parser.add_argument('--debug', '-d', action='store_true', help='Print debug messages to stderr')
 
     subparsers = parser.add_subparsers(dest='action')
@@ -50,7 +51,7 @@ def main():
     # print("--------------args: %s",args)
     # print("--------------args")
 
-    client = EzvizClient(args.username, args.password)
+    client = EzvizClient(args.username, args.password, args.region)
 
     if args.debug:
 
